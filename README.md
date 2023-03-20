@@ -61,4 +61,11 @@ Inorder to run the application
   storm jar path/to/target/storm-example-1.0-jar-with-dependencies.jar com.ps.crawler.CrawlTopology 
 5. You can view your topolgies in the storm cluster UI on the localhost:8080.
 
+Reference/Documentations used are
+1.https://stormcrawler.net/getting-started/
+2.https://javadoc.io/doc/com.digitalpebble.stormcrawler/storm-crawler-core/latest/index.html
+3.https://storm.apache.org/releases/2.4.0/index.html
+4.http://admicloud.github.io/www/storm.html#:~:text=WordCount%20example,in%20the%20examples%20source%20code.&text=In%20this%20example%20there%20are%20three%20processing%20units%20arranged%20in%20the%20graph.
  
+ 
+ From this project I got to learn about apache storm and storm crawler. Got to learn how apache storm is used for real time processing of distributed system and how stormcrawler can be use to scrape/crawl through the websites.
