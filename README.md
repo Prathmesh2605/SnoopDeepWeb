@@ -51,3 +51,14 @@ storm local target/stormcrawler-1.0.jar  org.apache.storm.flux.Flux crawler.flux
 Note that in local mode, Flux uses a default TTL for the topology of 20 secs. The command above runs the topology for 1 hour.
 
 It is best to run the topology with `storm jar` to benefit from the Storm UI and logging. In that case, the topology runs continuously, as intended.
+
+
+Inorder to run the application
+1. Start the zookeeper server using zkServer.cmd command in the terminal.
+2. Start the storm nimbus server using storm nimbus command followed by storm supervisor.
+3. In order to create the UI for storm topologies run storm ui command.
+4. After starting the storm UI in another terminal run the following command to execute your topology and submit it to the storm cluster
+  storm jar path/to/target/storm-example-1.0-jar-with-dependencies.jar com.ps.crawler.CrawlTopology 
+5. You can view your topolgies in the storm cluster UI on the localhost:8080.
+
+ 
